@@ -59,8 +59,8 @@ def run_terminal():
                             else:
                                 print(f"Undefined variable '{varvalue}'")
                                 continue
-                    variables[varname] = varvalue
-                    print(f"Successfully set {varname} = {variables[varname]}")
+                variables[varname] = varvalue
+                print(f"Successfully set {varname} = {variables[varname]}")
             else:
                 suggestion = get_suggestion(rawcmd, commands)
                 if suggestion and suggestion != rawcmd:
