@@ -1,3 +1,5 @@
+## if you want to use the latest version, download the files from the file tree (main branch) instead of downloading them from Releases. 
+
 # Manual Intellegence
 a chatbot with preset answers
 
