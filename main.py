@@ -130,7 +130,7 @@ while True:
 
     bye_patterns = "bye", "see y", "goodbye", "exit", "quit", "farewell"
     areureal_patterns = "are you real", "are yu real", "are u real", "are ya real"
-    hi_patterns = "hello", "helo"
+    hi_patterns = r"\bhello\b", r"\bhelo\b", r"\bhi\b", r"\bhey\b"
     how_are_patterns = "how are you", "how r you", "how are u", "how r u", "how is you", "how is u"
     how_day_patterns = "hows your day been", "how was your day", "how is your day", "hows ya day been", "how was ya day", "how is ya day", "hows ur day been", "how was ur day", "how is ur day", "hows u day been", "how was u day", "how is u day"
     who_made_patterns = "who made y", "whos your owner", "who's your owner", "whos yo owner", "who's yo owner", "whos ya owner", "who's ya owner"
@@ -168,8 +168,6 @@ while True:
         break
 
     elif matches_any(hi_patterns, ask):
-        print("Bot: Hello!")
-    elif raw.lower() == "hi" or raw.lower() == "hey":
         print("Bot: Hello!")
 
     elif matches_any(how_are_patterns, ask):
